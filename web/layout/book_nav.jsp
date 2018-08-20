@@ -1,6 +1,5 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
-
 <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container-fluid">
         <div class="navbar-header">
@@ -10,18 +9,16 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Project name</a>
+            <a class="navbar-brand" href="#">南方S147书店</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">Dashboard</a></li>
-                <li><a href="#">Settings</a></li>
-                <li><a href="#">Profile</a></li>
-                <li><a href="#">Help</a></li>
+                <li><a href="#">首页</a></li>
+                <li><a href="#">设置</a></li>
+                <li><a href="#">帮助</a></li>
             </ul>
             <form action="/book/q" class="navbar-form navbar-right">
                 <input type="text" class="form-control" placeholder="查询条件(名字)" name="condition">
-                <input type="submit" value="搜索" class="btn btn-primary">
             </form>
         </div>
     </div>

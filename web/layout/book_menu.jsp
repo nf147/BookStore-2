@@ -2,21 +2,15 @@
 
 <div class="col-sm-3 col-md-2 sidebar">
     <ul class="nav nav-sidebar">
-        <li class="active"><a href="#">Overview <span class="sr-only">(current)</span></a></li>
-        <li><a href="#">Reports</a></li>
-        <li><a href="#">Analytics</a></li>
-        <li><a href="#">Export</a></li>
+        <li id="booklist"><a href="/book/index">书籍列表</a></li>
+        <li id="bookadd"><a href="/book/add">新增书籍</a></li>
+        <li><a href="#">作者管理</a></li>
+        <li><a href="#">导出数据</a></li>
     </ul>
     <ul class="nav nav-sidebar">
-        <li><a href="">Nav item</a></li>
-        <li><a href="">Nav item again</a></li>
-        <li><a href="">One more nav</a></li>
-        <li><a href="">Another nav item</a></li>
-        <li><a href="">More navigation</a></li>
-    </ul>
-    <ul class="nav nav-sidebar">
-        <li><a href="">Nav item again</a></li>
-        <li><a href="">One more nav</a></li>
-        <li><a href="">Another nav item</a></li>
+        <li><a href="">订单管理</a></li>
+        <li><a href="">库存管理</a></li>
+        <li><a href="">用户管理</a></li>
+        <li><a href="">系统设置</a></li>
     </ul>
 </div>

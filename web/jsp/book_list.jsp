@@ -62,6 +62,8 @@
             checkboxs[i].checked = e.checked
         }
     }
+
+    document.querySelector("#booklist").classList.add("active");
 </script>
 </body>
 </html>
