@@ -12,12 +12,12 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 
-@WebServlet(value = "/add")
+@WebServlet(value = "/book/add")
 public class BookAdd extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        req.getRequestDispatcher("jsp/book_add_form.jsp").forward(req, resp);
+        req.getRequestDispatcher("/jsp/book_add_form.jsp").forward(req, resp);
     }
 
     @Override
@@ -35,6 +35,6 @@ public class BookAdd extends HttpServlet {
         BookDAO bookDAO = new BookInMemoryDAO();
         bookDAO.add(book);
 
-        resp.sendRedirect("/index");
+        resp.sendRedirect("/book/index");
     }
 }

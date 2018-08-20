@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet(value = "/del")
+@WebServlet(value = "/book/del")
 public class BookDel extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -25,7 +25,7 @@ public class BookDel extends HttpServlet {
         //req.getRequestDispatcher("/index").forward(req, resp);
         req.getSession().setAttribute("msg", msg);
 
-        resp.sendRedirect("/index");
+        resp.sendRedirect("/book/index");
     }
 
     @Override
@@ -40,6 +40,6 @@ public class BookDel extends HttpServlet {
         req.getSession().setAttribute("msg", "删除成功。");
 
         // req.getRequestDispatcher("/index").forward(req,resp);
-        resp.sendRedirect("/index");
+        resp.sendRedirect("/book/index");
     }
 }

@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 
-@WebServlet(value = "/detail")
+@WebServlet(value = "/book/detail")
 public class BookDetail extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -25,6 +25,6 @@ public class BookDetail extends HttpServlet {
 
         Book book = bookDAO.getBookById(id);
         req.setAttribute("book", book);
-        req.getRequestDispatcher("jsp/book_detail.jsp").forward(req, resp);
+        req.getRequestDispatcher("/jsp/book_detail.jsp").forward(req, resp);
     }
 }

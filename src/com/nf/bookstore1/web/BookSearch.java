@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
 
-@WebServlet("/q")
+@WebServlet("/book/q")
 public class BookSearch extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -28,6 +28,6 @@ public class BookSearch extends HttpServlet {
 
         req.getSession().setAttribute("msg", "当前查询条件为:[" + condition + "]");
 
-        req.getRequestDispatcher("jsp/book_list.jsp").include(req, resp);
+        req.getRequestDispatcher("/jsp/book_list.jsp").include(req, resp);
     }
 }

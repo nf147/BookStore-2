@@ -11,7 +11,7 @@
 
 <div class="container">
 
-     <form action="/add" method="post">
+     <form action="/book/add" method="post">
         <div class="form-group">
             <label for="id">书籍ID</label>
             <input type="number" class="form-control" id="id" name="id" placeholder="id">
@@ -33,7 +33,6 @@
             <input type="text" class="form-control" id="press" name="press" placeholder="press">
         </div>
          <div><input type="submit"  class="form-control"></div>
-    </form>
     </form>
 </div>
 </body>

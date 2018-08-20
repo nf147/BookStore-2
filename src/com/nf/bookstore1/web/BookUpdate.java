@@ -13,7 +13,7 @@ import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
 
-@WebServlet("/update")
+@WebServlet("/book/update")
 public class BookUpdate extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -21,7 +21,7 @@ public class BookUpdate extends HttpServlet {
         BookDAO bookDAO = new BookInMemoryDAO();
         Book book = bookDAO.getBookById(id);
         req.setAttribute("book", book);
-        req.getRequestDispatcher("jsp/book_update.jsp").forward(req, resp);
+        req.getRequestDispatcher("/jsp/book_update.jsp").forward(req, resp);
     }
 
     @Override
@@ -42,6 +42,6 @@ public class BookUpdate extends HttpServlet {
         HttpSession session = req.getSession();
         session.setAttribute("msg", "更新成功！");
 
-        resp.sendRedirect("/detail?id=" + id);
+        resp.sendRedirect("/book/detail?id=" + id);
     }
 }

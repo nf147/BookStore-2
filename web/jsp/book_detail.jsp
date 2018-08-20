@@ -20,11 +20,10 @@
 <%= WebUtil.popSessionMsg(request) %>
 
 <h1><%=book.getName()%></h1>
-<ul>
-    <li><%=book.getAuthor()%></li>
-    <li><%=book.getPrice()%></li>
-    <li><%=book.getPress()%></li>
+<ul class="list-group">
+    <li class="list-group-item"><%=book.getAuthor()%></li>
+    <li class="list-group-item"><%=book.getPrice()%></li>
+    <li class="list-group-item"><%=book.getPress()%></li>
 </ul>
-
 </body>
 </html>

@@ -18,6 +18,6 @@ public class BookList extends HttpServlet {
         BookDAO bookDAO = new BookInMemoryDAO();
         List<Book> books = bookDAO.listAll();
         req.setAttribute("books", books);
-        req.getRequestDispatcher("jsp/book_list.jsp").forward(req, resp);
+        req.getRequestDispatcher("/jsp/book_list.jsp").forward(req, resp);
     }
 }
