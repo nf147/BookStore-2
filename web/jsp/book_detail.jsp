@@ -25,5 +25,6 @@
     <li class="list-group-item"><%=book.getPrice()%></li>
     <li class="list-group-item"><%=book.getPress()%></li>
 </ul>
+<a href="/book/index">返回主页面</a>
 </body>
 </html>

@@ -10,7 +10,7 @@
 
 <%= WebUtil.popSessionMsg(request) %>
 
-<form action="/book/del" method="post">
+<form id="myForm" action="/book/del" method="post">
     <table class="table table-striped">
         <tr>
             <th><input type="checkbox" onclick="alls(this)"></th>
@@ -40,7 +40,7 @@
             </td>
             <td>
                 <a href="/book/del?id=<%= book.getId() %>">删除</a>
-                <a href="/book/update?id=<%= book.getId() %>">更新</a>
+                <a data-toggle="modal" href="#myModal" data-id="<%= book.getId()%>">更新</a>
             </td>
         </tr>
         <%
@@ -48,14 +48,32 @@
         %>
     </table>
 
-
     <div style="margin-top: 2em;">
         <input type="submit" value="删除" class="btn btn-success">
-        <a href="/book/add">增加新的书籍</a>
+        <a class="btn btn-primary" href="/book/add">增加新的书籍</a>
     </div>
 </form>
 
+<%--弹出来的修改页面--%>
+<%@ include file="book_update_modal.jsp" %>
+
 <script>
+    $("#myModal").on("show.bs.modal", function (event) {
+        var x = event.target;
+        var tds = x.parentNode.parentNode.getElementsByTagName("td");
+        var id = tds[1].childNodes[0].nodeValue;
+        var name = tds[2].childNodes[0].childNodes[0].nodeValue;
+        var price = tds[3].childNodes[0].nodeValue;
+        var author = tds[4].childNodes[0].nodeValue;
+        var press = tds[5].childNodes[0].nodeValue;
+
+        $("#bookId").val(id.trim());
+        $("#bookname").val(name.trim());
+        $("#bookprice").val(price.trim());
+        $("#bookauthor").val(author.trim());
+        $("#bookpress").val(press.trim());
+    });
+
     function alls(e) {
         var checkboxs = document.getElementsByName("id");
         for (var i = 0; i < checkboxs.length; i++) {
@@ -64,6 +82,8 @@
     }
 
     document.querySelector("#booklist").classList.add("active");
+
 </script>
+
 </body>
 </html>

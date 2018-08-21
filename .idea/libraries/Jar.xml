@@ -2,6 +2,7 @@
   <library name="常用Jar包">
     <CLASSES>
       <root url="jar://D:/library/sitemesh-2.4.2.jar!/" />
+      <root url="jar://D:/library/jstl-1.2.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
