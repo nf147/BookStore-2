@@ -15,11 +15,14 @@ import java.util.List;
 public class BookList extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        String isAjax = (String) req.getParameter("ajax");
+        String retPage = req.getContextPath() + "/jsp/book_list" + (isAjax == null ? "" : "_ajax") + ".jsp";
+
         BookDAO bookDAO = new BookInMemoryDAO();
         List<Book> books = bookDAO.listAll();
         req.setAttribute("books", books);
 
-        req.getRequestDispatcher("/jsp/book_list.jsp").forward(req, resp);
+        req.getRequestDispatcher(retPage).forward(req, resp);
     }
 
 }

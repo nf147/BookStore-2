@@ -1,5 +1,6 @@
-package com.nf.bookstore1.web;
+package com.nf.bookstore1.json;
 
+import com.google.gson.Gson;
 import com.nf.bookstore1.dao.BookDAO;
 import com.nf.bookstore1.dao.BookInMemoryDAO;
 import com.nf.bookstore1.entity.Book;
@@ -10,24 +11,25 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.List;
 
-@WebServlet("/book/q")
-public class BookSearch extends HttpServlet {
+@WebServlet("/json/books")
+public class BookList extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        resp.setContentType("application/json;charset=UTF-8");
         resp.setCharacterEncoding("utf-8");
-        resp.setContentType("text/html;charset=utf-8");
-
-        String condition = req.getParameter("condition");
 
         BookDAO bookDAO = new BookInMemoryDAO();
-        List<Book> books = bookDAO.getBooksByName(condition);
+        List<Book> books = bookDAO.listAll();
 
-        req.setAttribute("books", books);
+        PrintWriter writer = resp.getWriter();
 
-        req.getSession().setAttribute("msg", "当前查询条件为:[" + condition + "]");
+        Gson gson = new Gson();
+        String bookStr = gson.toJson(books);
+        writer.write(bookStr);
 
-        req.getRequestDispatcher("/jsp/book_list_ajax.jsp").include(req, resp);
+        writer.close();
     }
 }

@@ -3,6 +3,7 @@
     <CLASSES>
       <root url="jar://D:/library/sitemesh-2.4.2.jar!/" />
       <root url="jar://D:/library/jstl-1.2.jar!/" />
+      <root url="jar://D:/library/gson-2.8.5.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
