@@ -8,10 +8,9 @@
   <component name="ChangeListManager">
     <list default="true" id="855f70ec-a9a9-4660-bd43-802dd8687ad1" name="Default Changelist" comment="20180815">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nf/bookstore1/web/BookList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nf/bookstore1/web/BookList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/jsp/book_add_form.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/jsp/book_add_form.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/jsp/book_detail.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/jsp/book_detail.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/jsp/book_list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/jsp/book_list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/jsp/book_update.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/jsp/book_update.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/jsp/book_update_modal.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/jsp/book_update_modal.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/layout/book_tpl.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/layout/book_tpl.jsp" afterDir="false" />
     </list>
@@ -136,10 +135,10 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="9" />
-          <entry key="css" value="4" />
+          <entry key="css" value="5" />
           <entry key="java" value="35" />
           <entry key="js" value="2" />
-          <entry key="jsp" value="98" />
+          <entry key="jsp" value="101" />
           <entry key="md" value="2" />
           <entry key="tld" value="2" />
           <entry key="xml" value="16" />
@@ -148,9 +147,9 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="9" />
-          <entry key="CSS" value="4" />
+          <entry key="CSS" value="5" />
           <entry key="JAVA" value="35" />
-          <entry key="JSP" value="98" />
+          <entry key="JSP" value="101" />
           <entry key="JavaScript" value="2" />
           <entry key="Markdown" value="2" />
           <entry key="XML" value="18" />
@@ -160,7 +159,7 @@
         <counts>
           <entry key="dummy" value="9" />
           <entry key="java" value="385" />
-          <entry key="jsp" value="3557" />
+          <entry key="jsp" value="3784" />
           <entry key="md" value="89" />
           <entry key="xml" value="124" />
         </counts>
@@ -168,7 +167,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="385" />
-          <entry key="JSP" value="3557" />
+          <entry key="JSP" value="3784" />
           <entry key="Markdown" value="89" />
           <entry key="PLAIN_TEXT" value="9" />
           <entry key="XML" value="124" />
@@ -181,8 +180,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/jsp/book_list.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="71" column="64" selection-start-line="71" selection-start-column="64" selection-end-line="71" selection-end-column="64" />
+            <state relative-caret-position="300">
+              <caret line="21" column="24" lean-forward="true" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/jsp/book_update.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="4" column="17" lean-forward="true" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -199,17 +210,42 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/layout/book_tpl.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="14" selection-start-line="14" selection-end-line="14" />
+            <state relative-caret-position="-324">
+              <caret line="6" column="6" lean-forward="true" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/jsp/book_update_modal.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="2" column="15" lean-forward="true" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
+              <folding>
+                <element signature="n#form#0;n#!!top" />
+                <element signature="n#script#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/jsp/book_detail.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="19" selection-start-line="19" selection-end-line="19" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/jsp/book_update_modal.jsp">
+        <entry file="file://$PROJECT_DIR$/web/jsp/book_add_form.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="29" column="30" lean-forward="true" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="30" />
+            <state relative-caret-position="216">
+              <caret line="30" column="43" selection-start-line="30" selection-start-column="43" selection-end-line="30" selection-end-column="43" />
+              <folding>
+                <element signature="n#head#0;n#html#0;n#!!top" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -289,19 +325,19 @@
         <option value="$PROJECT_DIR$/web/layout/book_footer.jsp" />
         <option value="$PROJECT_DIR$/web/layout/book_nav.jsp" />
         <option value="$PROJECT_DIR$/web/layout/book_menu.jsp" />
-        <option value="$PROJECT_DIR$/web/jsp/book_add_form.jsp" />
         <option value="$PROJECT_DIR$/src/com/nf/bookstore1/web/BookDetail.java" />
         <option value="$PROJECT_DIR$/src/com/nf/bookstore1/test/Main.java" />
         <option value="$PROJECT_DIR$/src/com/nf/bookstore1/web/BookUpdate.java" />
-        <option value="$PROJECT_DIR$/web/jsp/book_detail.jsp" />
         <option value="$PROJECT_DIR$/web/jsp/book_update.jsp" />
-        <option value="$PROJECT_DIR$/web/layout/book_tpl.jsp" />
         <option value="$PROJECT_DIR$/src/com/nf/bookstore1/web/BookList.java" />
         <option value="$PROJECT_DIR$/src/com/nf/bookstore1/web/GetBook.java" />
         <option value="$PROJECT_DIR$/src/com/nf/bookstore1/json/GetBook.java" />
         <option value="$PROJECT_DIR$/src/com/nf/bookstore1/json/BookInfo.java" />
-        <option value="$PROJECT_DIR$/web/jsp/book_list.jsp" />
         <option value="$PROJECT_DIR$/web/jsp/book_update_modal.jsp" />
+        <option value="$PROJECT_DIR$/web/jsp/book_detail.jsp" />
+        <option value="$PROJECT_DIR$/web/layout/book_tpl.jsp" />
+        <option value="$PROJECT_DIR$/web/jsp/book_list.jsp" />
+        <option value="$PROJECT_DIR$/web/jsp/book_add_form.jsp" />
       </list>
     </option>
   </component>
@@ -860,7 +896,7 @@
       <workItem from="1534848942146" duration="92000" />
       <workItem from="1534849240812" duration="5851000" />
       <workItem from="1534897814051" duration="11529000" />
-      <workItem from="1534917523305" duration="566000" />
+      <workItem from="1534917523305" duration="1966000" />
     </task>
     <task id="LOCAL-00001" summary="第一次上传">
       <created>1534332056591</created>
@@ -873,7 +909,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="128900000" />
+    <option name="totallyTimeSpent" value="130300000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1135" height="675" extended-state="6" />
@@ -887,7 +923,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49860725" weight="0.0718232" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.22651933" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.53038675" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -914,7 +950,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49860725" weight="0.0718232" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.22651933" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.53038675" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -1161,13 +1197,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/assets/css/bootstrap.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2729">
-          <caret line="268" column="12" lean-forward="true" selection-start-line="268" selection-start-column="12" selection-end-line="268" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/layout/cart_tpl.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
@@ -1213,20 +1242,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/jsp/book_add_form.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/jsp/book_detail.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://D:/library/jstl-1.2.jar!/META-INF/fmt.tld">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="279">
@@ -1255,13 +1270,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/jsp/book_update.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-144">
-          <caret line="5" column="7" lean-forward="true" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
@@ -1276,24 +1284,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/layout/book_tpl.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/nf/bookstore1/web/BookList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="15" column="13" lean-forward="true" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/jsp/book_list.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="71" column="64" selection-start-line="71" selection-start-column="64" selection-end-line="71" selection-end-column="64" />
         </state>
       </provider>
     </entry>
@@ -1306,8 +1300,60 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/jsp/book_update_modal.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="29" column="30" lean-forward="true" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="30" />
+        <state relative-caret-position="60">
+          <caret line="2" column="15" lean-forward="true" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
+          <folding>
+            <element signature="n#form#0;n#!!top" />
+            <element signature="n#script#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/jsp/book_detail.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/jsp/book_update.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="4" column="17" lean-forward="true" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/layout/book_tpl.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-324">
+          <caret line="6" column="6" lean-forward="true" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/jsp/book_list.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="21" column="24" lean-forward="true" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/assets/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="2572" column="1" selection-start-line="2572" selection-start-column="1" selection-end-line="2572" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/jsp/book_add_form.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="30" column="43" selection-start-line="30" selection-start-column="43" selection-end-line="30" selection-end-column="43" />
+          <folding>
+            <element signature="n#head#0;n#html#0;n#!!top" />
+          </folding>
         </state>
       </provider>
     </entry>

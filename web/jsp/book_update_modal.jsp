@@ -1,8 +1,9 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
+<%--显示与数据分离--%>
 
-<form action="/book/update" method="post" class="form-horizontal">
-    <!-- 模态框（Modal） -->
+<%--显示区--%>
+<form action="<c:url value="/book/update" />" method="post" class="form-horizontal">
     <div class="modal fade" id="myModal" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -45,11 +46,12 @@
                 <div class="modal-footer">
                     <div><input type="submit" class="btn btn-primary" value="提交更新"></div>
                 </div>
-            </div><!-- /.modal-content -->
-        </div><!-- /.modal -->
+            </div>
+        </div>
     </div>
 </form>
 
+<%--数据区--%>
 <script>
     $("#myModal").on("show.bs.modal", function (e) {
         var id = $(e.relatedTarget).data("id");
@@ -69,5 +71,4 @@
             console.log("不管成功还是失败，这段代码都会被执行。")
         });
     });
-
 </script>

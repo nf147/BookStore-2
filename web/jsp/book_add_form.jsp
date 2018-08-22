@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -6,7 +7,7 @@
 </head>
 <body>
 
-<form action="/book/add" method="post">
+<form action="<c:url value="/book/add" />" method="post">
     <div class="form-group">
         <label for="id">书籍ID</label>
         <input type="number" class="form-control" id="id" name="id" placeholder="id">
@@ -27,7 +28,7 @@
         <label for="press">出版社</label>
         <input type="text" class="form-control" id="press" name="press" placeholder="press">
     </div>
-    <div><input type="submit" class="form-control"></div>
+    <div><input type="submit" class="btn btn-primary"></div>
 </form>
 
 <script>

@@ -16,7 +16,7 @@
     <%--引入相关的js等--%>
     <%@include file="book_res_post.jsp"%>
 
-    <sitemesh:head></sitemesh:head>
+    <sitemesh:head />
 </head>
 
 <body>
