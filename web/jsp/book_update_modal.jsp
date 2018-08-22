@@ -49,3 +49,25 @@
         </div><!-- /.modal -->
     </div>
 </form>
+
+<script>
+    $("#myModal").on("show.bs.modal", function (e) {
+        var id = $(e.relatedTarget).data("id");
+        $.ajax({
+            method: "get",
+            url: "<c:url value="/json/book" />",
+            data: {id: id}
+        }).done(function (data, bbb, ccc) {
+            $("#bookId").val(data.id);
+            $("#bookname").val(data.name);
+            $("#bookprice").val(data.price);
+            $("#bookauthor").val(data.author);
+            $("#bookpress").val(data.press);
+        }).fail(function (xhr, textStatus, errorThrown) {
+            console.error(errorThrown);
+        }).always(function () {
+            console.log("不管成功还是失败，这段代码都会被执行。")
+        });
+    });
+
+</script>

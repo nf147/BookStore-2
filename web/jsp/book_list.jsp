@@ -1,7 +1,7 @@
-<%@ page import="java.util.List" %>
-<%@ page import="com.nf.bookstore1.entity.Book" %>
 <%@ page import="util.WebUtil" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib prefix="f" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <html>
 <head>
     <title>图书列表</title>
@@ -10,10 +10,11 @@
 
 <%= WebUtil.popSessionMsg(request) %>
 
+
 <form id="myForm" action="/book/del" method="post">
     <table class="table table-striped">
         <tr>
-            <th><input type="checkbox" onclick="alls(this)"></th>
+            <th><input type="checkbox" onclick="toggle_check_all(this)"></th>
             <th>id</th>
             <th>书名</th>
             <th>价格</th>
@@ -21,31 +22,34 @@
             <th>出版社</th>
             <th>其他</th>
         </tr>
-        <%
-            List<Book> books = (List<Book>) request.getAttribute("books");
 
-            for (Book book : books) {
-        %>
-        <tr>
-            <td><input name="id" value="<%= book.getId()%>" type="checkbox"></td>
-            <td><%= book.getId() %>
-            </td>
-            <td><a href="/book/detail?id=<%= book.getId()%>"><%= book.getName() %>
+        <c:forEach var="book" items="${books}" varStatus="st">
+            <c:if test="${st.count % 2 == 0}">
+                <tr style="color:blue">
+            </c:if>
+            <c:if test="${st.count % 2 != 0}">
+                <tr style="color:red">
+            </c:if>
+            <td><input name="id" value=${book.id} type="checkbox"></td>
+            <td>${book.id}</td>
+            <td><a href="<c:url value="/book/detail?id=${book.id}" />">${book.name}
             </a></td>
-            <td><%= book.getPrice() %>
+            <td><f:formatNumber value="${book.price}" type="CURRENCY" currencySymbol="$"/>
             </td>
-            <td><%= book.getAuthor() %>
+            <td>${book.author}
             </td>
-            <td><%= book.getPress() %>
+            <td>${book.press}
             </td>
             <td>
-                <a href="/book/del?id=<%= book.getId() %>">删除</a>
-                <a data-toggle="modal" href="#myModal" data-id="<%= book.getId()%>">更新</a>
+                <c:url var="l" value='/book/del'>
+                    <c:param name="id" value="${book.id}" />
+                    <c:param name="xxxkkk" value="2323"/>
+                </c:url>
+                <a href="${l}">删除</a>
+                <a data-toggle="modal" href="#myModal" data-id="${book.id}">更新</a>
             </td>
-        </tr>
-        <%
-            }
-        %>
+            </tr>
+        </c:forEach>
     </table>
 
     <div style="margin-top: 2em;">
@@ -58,23 +62,7 @@
 <%@ include file="book_update_modal.jsp" %>
 
 <script>
-    $("#myModal").on("show.bs.modal", function (event) {
-        var x = event.target;
-        var tds = x.parentNode.parentNode.getElementsByTagName("td");
-        var id = tds[1].childNodes[0].nodeValue;
-        var name = tds[2].childNodes[0].childNodes[0].nodeValue;
-        var price = tds[3].childNodes[0].nodeValue;
-        var author = tds[4].childNodes[0].nodeValue;
-        var press = tds[5].childNodes[0].nodeValue;
-
-        $("#bookId").val(id.trim());
-        $("#bookname").val(name.trim());
-        $("#bookprice").val(price.trim());
-        $("#bookauthor").val(author.trim());
-        $("#bookpress").val(press.trim());
-    });
-
-    function alls(e) {
+    function toggle_check_all(e) {
         var checkboxs = document.getElementsByName("id");
         for (var i = 0; i < checkboxs.length; i++) {
             checkboxs[i].checked = e.checked
@@ -82,7 +70,6 @@
     }
 
     document.querySelector("#booklist").classList.add("active");
-
 </script>
 
 </body>

@@ -6,14 +6,12 @@
 </head>
 <body>
 
-<% Book book = (Book) request.getAttribute("book"); %>
-
 <form action="/book/update" method="post">
-    <div><input type="text" name="name" placeholder="name" value="<%= book.getName()%>"></div>
-    <div><input type="number" step="0.01" name="price" placeholder="price" value="<%= book.getPrice()%>"></div>
-    <div><input type="text" name="author" placeholder="author" value="<%= book.getAuthor()%>"></div>
-    <div><input type="text" name="press" placeholder="press" value="<%= book.getPress()%>"></div>
-    <div><input type="hidden" name="id" value="<%= book.getId()%>"></div>
+    <div><input type="text" name="name" placeholder="name" value="${requestScope.book.name}"></div>
+    <div><input type="number" step="0.01" name="price" placeholder="price" value="<${requestScope.book.price}"></div>
+    <div><input type="text" name="author" placeholder="author" value="<${requestScope.book.author}"></div>
+    <div><input type="text" name="press" placeholder="press" value="${requestScope.book.press}"></div>
+    <div><input type="hidden" name="id" value="${requestScope.book.id}"></div>
 
     <div><input type="submit" value="提交更新"></div>
 </form>

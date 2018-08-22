@@ -13,17 +13,15 @@
 </head>
 <body>
 
-<%
-    Book book = (Book) request.getAttribute("book");
-%>
 
 <%= WebUtil.popSessionMsg(request) %>
 
-<h1><%=book.getName()%></h1>
+
+<h1>${requestScope.book.name}</h1>
 <ul class="list-group">
-    <li class="list-group-item"><%=book.getAuthor()%></li>
-    <li class="list-group-item"><%=book.getPrice()%></li>
-    <li class="list-group-item"><%=book.getPress()%></li>
+    <li class="list-group-item">${requestScope.book.author}</li>
+    <li class="list-group-item">${requestScope.book.price}</li>
+    <li class="list-group-item">${requestScope.book.press}</li>
 </ul>
 <a href="/book/index">返回主页面</a>
 </body>

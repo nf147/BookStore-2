@@ -13,6 +13,9 @@
 
     <%@include file="book_res_pre.jsp"%>
 
+    <%--引入相关的js等--%>
+    <%@include file="book_res_post.jsp"%>
+
     <sitemesh:head></sitemesh:head>
 </head>
 
@@ -26,8 +29,6 @@
     <div class="row">
         <%--菜单栏--%>
         <%@include file="book_menu.jsp"%>
-        <%--引入相关的js等--%>
-        <%@include file="book_res_post.jsp"%>
         <%--body--%>
         <%@include file="book_body.jsp"%>
     </div>
