@@ -28,6 +28,6 @@ public class BookSearch extends HttpServlet {
 
         req.getSession().setAttribute("msg", "当前查询条件为:[" + condition + "]");
 
-        req.getRequestDispatcher("/jsp/book_list_ajax.jsp").include(req, resp);
+        req.getRequestDispatcher("/WEB-INF/jsp/book_list_ajax.jsp").include(req, resp);
     }
 }

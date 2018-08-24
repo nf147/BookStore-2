@@ -25,6 +25,6 @@ public class BookDetail extends HttpServlet {
 
         Book book = bookDAO.getBookById(id);
         req.setAttribute("book", book);
-        req.getRequestDispatcher("/jsp/book_detail.jsp").forward(req, resp);
+        req.getRequestDispatcher("/WEB-INF/jsp/book_detail.jsp").forward(req, resp);
     }
 }

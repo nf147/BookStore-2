@@ -21,7 +21,7 @@ public class BookUpdate extends HttpServlet {
         BookDAO bookDAO = new BookInMemoryDAO();
         Book book = bookDAO.getBookById(id);
         req.setAttribute("book", book);
-        req.getRequestDispatcher("/jsp/book_update.jsp").forward(req, resp);
+        req.getRequestDispatcher("/WEB-INF/jsp/book_update.jsp").forward(req, resp);
     }
 
     @Override
