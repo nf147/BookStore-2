@@ -82,4 +82,9 @@ public class BookInMemoryDAO implements BookDAO {
         }
         return null;
     }
+
+    @Override
+    public int count() {
+        return bookDB.size();
+    }
 }

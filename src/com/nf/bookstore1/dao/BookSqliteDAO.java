@@ -34,4 +34,9 @@ public class BookSqliteDAO implements BookDAO {
     public Book add(Book book) {
         return null;
     }
+
+    @Override
+    public int count() {
+        return 0;
+    }
 }

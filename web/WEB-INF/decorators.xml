@@ -9,6 +9,7 @@
     <!-- 定义需要修饰的页面 -->
     <decorator name="book" page="book_tpl.jsp">
         <pattern>/book/*</pattern>
+        <pattern>/ws/*</pattern>
     </decorator>
 
     <decorator name="cart" page="cart_tpl.jsp">
